@@ -1,0 +1,18 @@
+.nav {
+  width: 250px;
+  border-right: 1px solid #7478b2;
+  grid-area: n;
+}
+
+li a {
+  color: #3b10bf;
+}
+
+li a:hover:not(.active) {
+  color: #ff6b86;
+}
+
+li .active {
+  color: #ff002f;
+  text-decoration: dotted;
+}
