@@ -1,5 +1,3 @@
-// @ts-check
-
 import React from "react";
 
 class RandomColorBtn extends React.Component {
@@ -8,7 +6,8 @@ class RandomColorBtn extends React.Component {
     this.state = {
       padding: "20px",
       backgroundColor: "rgb(0, 0, 0)",
-      color: "rgb(255, 255, 255)"
+      color: "rgb(255, 255, 255)",
+      transition: "all 0.2s ease",
     }
   }
 
@@ -28,7 +27,7 @@ class RandomColorBtn extends React.Component {
 
   render() {
     return <div>
-      <h1>Button with random color</h1>
+      <h1>Button with random inverted color</h1>
       <button
         style={this.state}
         onClick={() => {

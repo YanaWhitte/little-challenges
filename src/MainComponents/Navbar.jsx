@@ -4,20 +4,22 @@ import s from "./Navbar.module.css"
 const Navbar = () => {
   return <>
     <ol className={s.nav}>
+      <li><NavLink to="/random-col-btn" activeClassName={s.active}>Random color button</NavLink></li>
+      <li><NavLink to="/input-state" activeClassName={s.active}>Text input with shared state</NavLink></li>
+      <li><NavLink to="/slider-state" activeClassName={s.active}>Slider with shared state</NavLink></li>
       <li>
-        <NavLink to="/random-col-btn" activeClassName={s.active}>Random color button</NavLink>
+        <NavLink to="/random-col-slider" activeClassName={s.active}>Slider & randomly colored rectangles</NavLink>
       </li>
-      <li>
-        <NavLink to="/input-state" activeClassName={s.active}>Text input with shared state</NavLink>
-      </li>
-      <li>
-        <NavLink to="/slider-state" activeClassName={s.active}>Slider with shared state</NavLink>
-      </li>
-      <li>
-        <NavLink to="/random-col-slider" activeClassName={s.active}>
-          Slider which makes a column of divs with random color
-        </NavLink>
-      </li>
+      <li><NavLink to="/gradient-slider" activeClassName={s.active}>Slider with gradient row</NavLink></li>
+      <li><NavLink to="/basic-toggle" activeClassName={s.active}>Basic toggle</NavLink></li>
+      <li><NavLink to="/modal-window" activeClassName={s.active}>Modal window example</NavLink></li>
+      <li><NavLink to="/form-field" activeClassName={s.active}>Form text field</NavLink></li>
+      <li><NavLink to="/form-login" activeClassName={s.active}>Form login/password</NavLink></li>
+      <li><NavLink to="/mouse-coordinates" activeClassName={s.active}>Mouse position coordinates</NavLink></li>
+      <li><NavLink to="/shape-selector" activeClassName={s.active}>Shape selector</NavLink></li>
+      <li><NavLink to="/shape-creator" activeClassName={s.active}>Shape creator</NavLink></li>
+      <li><NavLink to="/shape-colored-creator" activeClassName={s.active}>Shape creator with custom colors</NavLink></li>
+      <li><NavLink to="/random-number" activeClassName={s.active}>Random number generation</NavLink></li>
     </ol>
   </>
 }

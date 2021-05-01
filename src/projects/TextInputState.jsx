@@ -12,7 +12,7 @@ class TextInputState extends React.Component {
     return <div>
       <h1>Input and div with shared state</h1>
       <p>Type text and it will be shown in the heading below</p>
-      <input onChange={(e) => this.setState({ text: e.currentTarget.value })} />
+      <input onChange={(e) => this.setState({ text: e.target.value })} />
       <div>{this.state.text}</div>
     </div>
   }
