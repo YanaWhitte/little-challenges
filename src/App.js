@@ -12,6 +12,11 @@ import BasicToggle from "./projects/BasicToggle";
 import ModalWindow from "./projects/ModalWindow";
 import FormField from "./projects/FormField";
 import FormLogin from "./projects/FormLogin";
+import MousePosition from "./projects/MousePosition";
+import ShapeSelector from "./projects/ShapeSelector";
+import ShapeCreator from "./projects/ShapeCreator";
+import ShapeColoredCreator from "./projects/ShapeColoredCreator";
+import RandomNumberGen from "./projects/RandomNumberGen";
 
 function App() {
   return (
@@ -32,11 +37,14 @@ function App() {
           <Route path="/modal-window" component={ModalWindow} />
           <Route path="/form-field" component={FormField} />
           <Route path="/form-login" component={FormLogin} />
-          <Route path="/mouse-coordinates" component={FormLogin} />
-          <Route path="/shape-selector" component={FormLogin} />
-          <Route path="/shape-creator" component={FormLogin} />
-          <Route path="/shape-colored-creator" component={FormLogin} />
-          <Route path="/random-number" component={FormLogin} />
+          <Route path="/mouse-coordinates" component={MousePosition} />
+          <Route path="/shape-selector" component={ShapeSelector} />
+          <Route path="/shape-creator" component={ShapeCreator} />
+          <Route
+            path="/shape-colored-creator"
+            component={ShapeColoredCreator}
+          />
+          <Route path="/random-number" component={RandomNumberGen} />
         </div>
       </BrowserRouter>
     </div>
