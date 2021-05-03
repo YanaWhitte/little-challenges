@@ -4,7 +4,7 @@ class SliderWithState extends React.Component {
   constructor() {
     super();
     this.state = {
-      number: "0"
+      number: 0
     }
   }
 
@@ -12,7 +12,6 @@ class SliderWithState extends React.Component {
     return <div>
       <h1>Slider with shared state</h1>
       <input
-        className="slider"
         type="range"
         min="0"
         max="100"

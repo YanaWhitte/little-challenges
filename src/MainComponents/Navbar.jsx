@@ -20,6 +20,11 @@ const Navbar = () => {
       <li><NavLink to="/shape-creator" activeClassName={s.active}>Shape creator</NavLink></li>
       <li><NavLink to="/shape-colored-creator" activeClassName={s.active}>Shape creator with custom colors</NavLink></li>
       <li><NavLink to="/random-number" activeClassName={s.active}>Random number generation</NavLink></li>
+      <li><NavLink to="/mouse-down-up-events" activeClassName={s.active}>Mouse Down & Mouse Up Events</NavLink></li>
+      <li><NavLink to="/mouse-drawing" activeClassName={s.active}>Mouse drawing</NavLink></li>
+      <li><NavLink to="/seconds-counter" activeClassName={s.active}>Seconds counter</NavLink></li>
+      <li><NavLink to="/row-component" activeClassName={s.active}>Row component demo</NavLink></li>
+      <li><NavLink to="/rgb-to-hsv" activeClassName={s.active}>RGB to HSV</NavLink></li>
     </ol>
   </>
 }

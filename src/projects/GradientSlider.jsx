@@ -5,7 +5,7 @@ class GradientSlider extends React.Component {
     super();
     this.state = {
       number: 1,
-      maxColors: "128",
+      maxColors: 128,
     };
   }
 
@@ -13,7 +13,7 @@ class GradientSlider extends React.Component {
     const blocks = Array(this.state.number).fill(0);
     return (
       <div>
-        <h1>Slider with black&white color column</h1>
+        <h1>Slider with black & white color column</h1>
         <div>
           <span>Max colors: </span>
           <input
