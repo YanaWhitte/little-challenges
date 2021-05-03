@@ -20,7 +20,7 @@ import RandomNumberGen from "./projects/RandomNumberGen";
 import MouseDownUp from "./projects/MouseDownUp";
 import MouseDrawing from "./projects/MouseDrawing";
 import SecondsCounter from "./projects/SecondsCounter";
-import RowComponent from "./projects/RowComponent";
+import RandomBalls from "./projects/RandomBalls";
 import RgbToHsv from "./projects/RgbToHsv";
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
           <Route path="/mouse-down-up-events" component={MouseDownUp} />
           <Route path="/mouse-drawing" component={MouseDrawing} />
           <Route path="/seconds-counter" component={SecondsCounter} />
-          <Route path="/row-component" component={RowComponent} />
+          <Route path="/random-balls" component={RandomBalls} />
           <Route path="/rgb-to-hsv" component={RgbToHsv} />
         </div>
       </BrowserRouter>

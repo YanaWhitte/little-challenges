@@ -23,7 +23,7 @@ const Navbar = () => {
       <li><NavLink to="/mouse-down-up-events" activeClassName={s.active}>Mouse Down & Mouse Up Events</NavLink></li>
       <li><NavLink to="/mouse-drawing" activeClassName={s.active}>Mouse drawing</NavLink></li>
       <li><NavLink to="/seconds-counter" activeClassName={s.active}>Seconds counter</NavLink></li>
-      <li><NavLink to="/row-component" activeClassName={s.active}>Row component demo</NavLink></li>
+      <li><NavLink to="/random-balls" activeClassName={s.active}>Balls with random numbers</NavLink></li>
       <li><NavLink to="/rgb-to-hsv" activeClassName={s.active}>RGB to HSV</NavLink></li>
     </ol>
   </>
