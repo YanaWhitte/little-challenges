@@ -22,6 +22,10 @@ import MouseDrawing from "./projects/MouseDrawing";
 import SecondsCounter from "./projects/SecondsCounter";
 import RandomBalls from "./projects/RandomBalls";
 import RgbToHsv from "./projects/RgbToHsv";
+import ClickBalls from "./projects/ClickBalls";
+import CheckboxField from "./projects/CheckboxField";
+import HsvToRgb from "./projects/HsvToRgb";
+import GradualHsv from "./projects/GradualHsv";
 
 function App() {
   return (
@@ -49,6 +53,10 @@ function App() {
           <Route path="/seconds-counter" component={SecondsCounter} />
           <Route path="/random-balls" component={RandomBalls} />
           <Route path="/rgb-to-hsv" component={RgbToHsv} />
+          <Route path="/click-balls" component={ClickBalls} />
+          <Route path="/checkboxes-field" component={CheckboxField} />
+          <Route path="/hsv-to-rgb" component={HsvToRgb} />
+          <Route path="/gradual-hsv" component={GradualHsv} />
         </div>
       </BrowserRouter>
     </div>
