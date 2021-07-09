@@ -9,7 +9,7 @@ function rgb2hsv(r, g, b) {
   diff = v - Math.min(rabs, gabs, babs);
   diffc = c => (v - c) / 6 / diff + 1 / 2;
   percentRoundFn = num => Math.round(num * 100) / 100;
-  if (diff == 0) {
+  if (diff === 0) {
     h = s = 0;
   } else {
     s = diff / v;

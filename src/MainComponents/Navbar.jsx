@@ -27,8 +27,7 @@ const Navbar = () => {
       <li><NavLink to="/rgb-to-hsv" activeClassName={s.active}>RGB to HSV</NavLink></li>
       <li><NavLink to="/click-balls" activeClassName={s.active}>Clickable random balls</NavLink></li>
       <li><NavLink to="/checkboxes-field" activeClassName={s.active}>Field Of Checkboxes</NavLink></li>
-      <li><NavLink to="/hsv-to-rgb" activeClassName={s.active}>HSV to RGB</NavLink></li>
-      <li><NavLink to="/gradual-hsv" activeClassName={s.active}>HSV to RGB With gradual saturation</NavLink></li>
+      <li><NavLink to="/tic-tac-toe" activeClassName={s.active}>Tic Tac Toe</NavLink></li>
     </ol>
   </>
 }

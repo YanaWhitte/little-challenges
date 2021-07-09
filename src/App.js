@@ -24,8 +24,7 @@ import RandomBalls from "./projects/RandomBalls";
 import RgbToHsv from "./projects/RgbToHsv";
 import ClickBalls from "./projects/ClickBalls";
 import CheckboxField from "./projects/CheckboxField";
-import HsvToRgb from "./projects/HsvToRgb";
-import GradualHsv from "./projects/GradualHsv";
+import TicTacToe from "./projects/TicTacToe";
 
 function App() {
   return (
@@ -55,8 +54,7 @@ function App() {
           <Route path="/rgb-to-hsv" component={RgbToHsv} />
           <Route path="/click-balls" component={ClickBalls} />
           <Route path="/checkboxes-field" component={CheckboxField} />
-          <Route path="/hsv-to-rgb" component={HsvToRgb} />
-          <Route path="/gradual-hsv" component={GradualHsv} />
+          <Route path="/tic-tac-toe" component={TicTacToe} />
         </div>
       </BrowserRouter>
     </div>

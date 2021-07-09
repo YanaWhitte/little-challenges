@@ -5,33 +5,51 @@ class CheckboxField extends React.Component {
   constructor() {
     super();
     this.state = {
-      number: 0
+      number: 8,
+      checked: []
     };
   }
 
   render() {
+    const addChecked = (e) => this.setState({ checked: [...this.state.checked, e.target.checked] });
+    const removeChecked = () => this.setState({ checked: this.state.checked.slice(0, -1) });
     return (
       <div>
         <h1>Field of checkboxes</h1>
         <Slider name={"Size"} minValue={1} maxValue={10}
           onChange={(e) => this.setState({ number: +e.target.value })} number={this.state.number} />
 
-        {Array(this.state.number).fill(0).map((_, index) => {
-          return <Row key={index} elements={Array(this.state.number).fill(0).map(() => Math.floor(Math.random() * 30))} />
-        })}
-        <p>Number of checkboxes checked: 0</p>
+        <div style={{ marginTop: "10px" }}>
+          {Array(this.state.number).fill(0).map((_, index) => {
+            return <Row key={index} elements={Array(this.state.number).fill(0).map(() => 30)}
+              addChecked={addChecked} removeChecked={removeChecked}
+            />
+          })}
+        </div>
+        <p>Number of checkboxes checked: {this.state.checked.length}</p>
       </div>
     );
   }
 }
 
-const Row = ({ elements }) => {
+const Row = ({ elements, addChecked, removeChecked }) => {
   return <>
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div style={{ display: "flex" }}>
       <div>
-        <div style={{ display: "flex", marginBottom: "5px" }}>
-          {elements.map((num, index) => {
-            return <input type="checkbox" key={index} style={{ marginRight: "5px" }} />
+        <div style={{ display: "flex" }}>
+          {elements.map((_, index) => {
+            return <input
+              type="checkbox" key={index}
+              onChange={(e) => {
+                if (e.target.checked) {
+                  addChecked(e)
+                  console.log("Checked")
+                } else {
+                  removeChecked();
+                  console.log("Unchecked")
+                }
+              }}
+            />
           })}
         </div>
       </div>
